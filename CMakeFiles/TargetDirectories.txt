@@ -1,0 +1,7 @@
+/home/jmrocze/ece60827/a1/cuda-assignment-1-Jakub-Mroczek/CMakeFiles/lab1.dir
+/home/jmrocze/ece60827/a1/cuda-assignment-1-Jakub-Mroczek/CMakeFiles/edit_cache.dir
+/home/jmrocze/ece60827/a1/cuda-assignment-1-Jakub-Mroczek/CMakeFiles/rebuild_cache.dir
+/home/jmrocze/ece60827/a1/cuda-assignment-1-Jakub-Mroczek/src/CMakeFiles/cudaLib.dir
+/home/jmrocze/ece60827/a1/cuda-assignment-1-Jakub-Mroczek/src/CMakeFiles/cpuLib.dir
+/home/jmrocze/ece60827/a1/cuda-assignment-1-Jakub-Mroczek/src/CMakeFiles/edit_cache.dir
+/home/jmrocze/ece60827/a1/cuda-assignment-1-Jakub-Mroczek/src/CMakeFiles/rebuild_cache.dir
