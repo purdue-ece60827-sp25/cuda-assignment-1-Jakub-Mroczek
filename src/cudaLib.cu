@@ -71,6 +71,8 @@ int runGpuSaxpy(int vectorSize) {
 
 	saxpy_gpu<<<gridSize, blockSize>>>(d_x, d_y, scale, vectorSize);
 	cudaMemcpy(h_saxpy_result, d_y, vectorSize*sizeof(float), cudaMemcpyDeviceToHost);
+	cudaFree(d_x);
+	cudaFree(d_y);
 
 	#ifndef DEBUG_PRINT_DISABLE 
 		printf(" saxpy_result = { ");
@@ -181,6 +183,8 @@ double estimatePi(uint64_t generateThreadCount, uint64_t sampleSize,
 	generatePoints<<<gridSize, blockSize>>>(d_pSums, generateThreadCount, sampleSize);
 	reduceCounts<<<gridSize, blockSize>>>(d_pSums, d_totals, generateThreadCount, reduceSize);
 	cudaMemcpy(h_totals, d_totals, totalsLength*sizeof(uint64_t), cudaMemcpyDeviceToHost);
+	cudaFree(d_pSums);
+	cudaFree(d_totals);
 
 	uint64_t hitcount = 0;
 	for(int i = 0; i<totalsLength; i++){
